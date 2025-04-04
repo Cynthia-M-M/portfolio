@@ -62,13 +62,13 @@ const projects = [
     {
         title: 'Hostel Management System',
         description: 'A web-based system for managing hostel bookings, room allocation, and billing, developed using Node.js, Express, and MySQL.',
-        link: 'https://example.com',
+        link: 'https://1drv.ms/f/c/2bb2f9afc8ae1149/EsdQ3eHpsZtPiGVbJDkmYI4B5skIfjMQlYTg9_tKewU37w?e=MjMaoh',
         icon: '🏨' // Text-based icon for hostel
     },
     {
         title: 'Hotel Management System',
         description: 'A hotel management system developed using HTML, CSS, JavaScript, and PHP, handling bookings and check-ins.',
-        link: 'https://example.com',
+        link: 'https://1drv.ms/f/c/2bb2f9afc8ae1149/ErF_d7NI-c5FvQ0lq6rP14MBRLdNguXdXy_oULbf27Mzww?e=4fXuTC',
         icon: '🏨' // Text-based icon for hotel
     },
     {
