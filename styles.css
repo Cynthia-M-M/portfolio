@@ -1103,7 +1103,7 @@ button:disabled {
     }
 
     .interests {
-        padding: 10px;
+        padding: 2rem;
     }
 
     .interests .interest-item {
@@ -1113,7 +1113,7 @@ button:disabled {
 
     /* Adjust grid layouts for items */
     .interests-grid {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .services-grid,
