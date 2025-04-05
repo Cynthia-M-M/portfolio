@@ -924,6 +924,7 @@ button:disabled {
     .footer-container {
         flex-direction: column;
         align-items: center;
+        padding: 10px;  /* Added padding to avoid tight edges */
     }
 
     .bio, .right-section {
@@ -1038,7 +1039,7 @@ button:disabled {
         justify-content: flex-start;        
         align-items: center;                
         flex-wrap: wrap;                    
-        width: 100%;                        
+        width: 90%;  /* Ensure the interest item width is controlled */
         margin: 0 auto 20px auto;           
         padding: 20px;                      
         background-color: #f4f4f4;          
@@ -1049,36 +1050,36 @@ button:disabled {
 
     /* Ensure the image doesn't stretch too much */
     .interests .interest-item img {
-        max-width: 100px;                   /
-        height: auto;                       
-        margin-right: 20px;                 
+        max-width: 100px;                   /* Limit the image size */
+        height: auto;                       /* Maintain aspect ratio */
+        margin-right: 20px;                 /* Space between image and text */
     }
 
     /* Ensure that text inside each .interest-item is spaced properly */
     .interests .interest-item .text {
-        flex: 1;                             /
-        text-align: left;                    
-        max-width: 80%;                      
+        flex: 1;                             /* Allow the text to grow and take available space */
+        text-align: left;                    /* Align text to the left */
+        max-width: 80%;                      /* Limit text width */
     }
 
     /* Hover Effect on each Interest Item */
     .interests .interest-item:hover {
-        transform: translateY(-5px);         
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        transform: translateY(-5px);         /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
     }
 
     /* On larger screens (above 768px), change layout to grid */
     @media (min-width: 769px) {
         .interests {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit grid with flexible items */
             gap: 20px;
-            padding: 40px;                   
+            padding: 40px;                   /* Adjust padding on larger screens */
         }
 
         .interests .interest-item {
-            width: auto;                     
-            margin: 0;                        
+            width: auto;                     /* Let grid handle widths */
+            margin: 0;                        /* Remove margin for grid items */
         }
     }
 
@@ -1127,6 +1128,7 @@ button:disabled {
         width: 100%;
     }
 }
+
 
 
 
