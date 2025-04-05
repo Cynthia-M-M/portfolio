@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 /* Base Styles */
 * {
     margin: 0;
@@ -919,7 +920,6 @@ button:disabled {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -933,8 +933,7 @@ button:disabled {
     .quick-links {
         margin-bottom: 20px;
     }
-}
-
+    
 /* Scroll to top button */
 .scroll-to-top {
     position: fixed;
@@ -958,6 +957,7 @@ button:disabled {
 .scroll-to-top:focus {
     outline: none;
 }
+    
 /* Animations */
 @keyframes typing {
     from {
@@ -991,3 +991,6 @@ button:disabled {
         transform: translateY(-10px);
     }
 }
+    }
+
+
