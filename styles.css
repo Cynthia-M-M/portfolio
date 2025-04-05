@@ -1122,7 +1122,7 @@ button:disabled {
 
     /* Adjust grid layouts for items */
     .interests-grid {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .services-grid,
