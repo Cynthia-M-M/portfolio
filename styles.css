@@ -1036,7 +1036,7 @@ button:disabled {
     /* Interest Cards Container */
     .interests-grid {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
     }
 
