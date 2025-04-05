@@ -1010,30 +1010,75 @@ button:disabled {
         margin-bottom: 20px;
     }
 
-    /* My Services Section */
+     /* My Services Section */
     .my-services {
         display: block;
         text-align: center;
         padding: 20px;
-    }
+     }
 
-    .my-services .service-item {
+     .my-services .service-item {
         width: 100%;
         margin-bottom: 20px;
-    }
+     }
 
-    /* Interests Section */
-    .interests {
+     /* Interests Section */
+     .interests {
         display: block;
         padding: 20px;
         text-align: center;
-    }
+     }
 
-    .interests .interest-item {
+     .interests .interest-item {
         width: 100%;
         margin-bottom: 20px;
-    }
-}
+     }
+
+     /* Adjustments for mobile or smaller screens */
+     .recent-projects {
+         padding: 10px;
+     }
+
+     .recent-projects .project-item {
+         width: 100%;
+         margin-bottom: 15px;
+     }
+
+     .my-services {
+         padding: 10px;
+     }
+
+     .my-services .service-item {
+         width: 100%;
+         margin-bottom: 15px;
+     }
+
+     .interests {
+         padding: 10px;
+     }
+
+     .interests .interest-item {
+         width: 100%;
+         margin-bottom: 15px;
+      }
+
+      /* Adjust grid layouts */
+      .interests-grid {
+          flex-direction: column;
+      }
+
+      .services-grid,
+      .projects-section .projects-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+      }
+
+      .service-card,
+      .project-card {
+          width: 100%;
+      }
+     }    
 
 /* Scroll to top button */
 .scroll-to-top {
