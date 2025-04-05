@@ -999,6 +999,7 @@ button:disabled {
     .about-text p {
         font-size: 16px;
     }
+
     /* Recent Projects Section */
     .recent-projects {
         display: block;
@@ -1010,75 +1011,91 @@ button:disabled {
         margin-bottom: 20px;
     }
 
-     /* My Services Section */
+    /* My Services Section */
     .my-services {
         display: block;
         text-align: center;
         padding: 20px;
-     }
+    }
 
-     .my-services .service-item {
+    .my-services .service-item {
         width: 100%;
         margin-bottom: 20px;
-     }
+    }
 
-     /* Interests Section */
-     .interests {
+    /* Interests Section */
+    .interests {
         display: block;
         padding: 20px;
         text-align: center;
-     }
+    }
 
-     .interests .interest-item {
+    /* Modify Interest items to display horizontally in larger screens and stacked vertically on mobile */
+    .interests .interest-item {
         width: 100%;
         margin-bottom: 20px;
-     }
+    }
 
-     /* Adjustments for mobile or smaller screens */
-     .recent-projects {
-         padding: 10px;
-     }
+    /* On larger screens (above 768px), change the layout to a grid */
+    @media (min-width: 769px) {
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust based on item size */
+            gap: 20px;
+            padding: 40px; /* Adjust padding */
+        }
 
-     .recent-projects .project-item {
-         width: 100%;
-         margin-bottom: 15px;
-     }
+        .interests .interest-item {
+            width: auto; /* Let grid handle widths */
+        }
+    }
 
-     .my-services {
-         padding: 10px;
-     }
+    /* Adjustments for mobile or smaller screens */
+    .recent-projects {
+        padding: 10px;
+    }
 
-     .my-services .service-item {
-         width: 100%;
-         margin-bottom: 15px;
-     }
+    .recent-projects .project-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 
-     .interests {
-         padding: 10px;
-     }
+    .my-services {
+        padding: 10px;
+    }
 
-     .interests .interest-item {
-         width: 100%;
-         margin-bottom: 15px;
-      }
+    .my-services .service-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 
-      /* Adjust grid layouts */
-      .interests-grid {
-          flex-direction: column;
-      }
+    .interests {
+        padding: 10px;
+    }
 
-      .services-grid,
-      .projects-section .projects-grid {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-      }
+    .interests .interest-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 
-      .service-card,
-      .project-card {
-          width: 100%;
-      }
-     }    
+    /* Adjust grid layouts */
+    .interests-grid {
+        flex-direction: column;
+    }
+
+    .services-grid,
+    .projects-section .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service-card,
+    .project-card {
+        width: 100%;
+    }
+}
+
 
 /* Scroll to top button */
 .scroll-to-top {
