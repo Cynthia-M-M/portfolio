@@ -1034,30 +1034,37 @@ button:disabled {
 
     /* Modify Interest items to display horizontally inside each item */
     .interests .interest-item {
-        display: flex;                      /* Enable flexbox for horizontal layout */
-        justify-content: space-between;      /* Space items horizontally */
-        align-items: center;                /* Center items vertically */
-        width: 90%;                          
-        margin: 0 auto 20px auto;            
-        padding: 20px;                       
-        background-color: #f4f4f4;           
-        border-radius: 8px;                  
+        display: flex;                      
+        justify-content: flex-start;        
+        align-items: center;                
+        flex-wrap: wrap;                    
+        width: 100%;                        
+        margin: 0 auto 20px auto;           
+        padding: 20px;                      
+        background-color: #f4f4f4;          
+        border-radius: 8px;                  /* Rounded corners */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Hover Effect on each Interest Item */
-    .interests .interest-item:hover {
-        transform: translateY(-5px);         
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    /* Ensure the image doesn't stretch too much */
+    .interests .interest-item img {
+        max-width: 100px;                   /* Limit the image size */
+        height: auto;                       /* Maintain aspect ratio */
+        margin-right: 20px;                 /* Space between image and text */
     }
 
     /* Ensure that text inside each .interest-item is spaced properly */
     .interests .interest-item .text {
         flex: 1;                             /* Allow the text to grow and take available space */
-        padding-left: 10px;                 
-        padding-right: 10px;                 
-        text-align: left;                  
+        text-align: left;                    /* Align text to the left */
+        max-width: 80%;                      /* Limit text width */
+    }
+
+    /* Hover Effect on each Interest Item */
+    .interests .interest-item:hover {
+        transform: translateY(-5px);         /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
     }
 
     /* On larger screens (above 768px), change layout to grid */
