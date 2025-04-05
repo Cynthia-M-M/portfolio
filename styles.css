@@ -1023,14 +1023,14 @@ button:disabled {
         margin-bottom: 20px;
     }
 
-    /* Interests Section */
+   /* Interests Section */
     .interests {
         display: block;
         padding: 20px;
         text-align: center;
     }
 
-    /* Modify Interest items to display horizontally in larger screens and stacked vertically on mobile */
+    /* Modify Interest items to display vertically on mobile */
     .interests .interest-item {
         width: 100%;
         margin-bottom: 20px;
@@ -1040,7 +1040,7 @@ button:disabled {
     @media (min-width: 769px) {
         .interests {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust based on item size */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 items per row, adjusting size based on the viewport */
             gap: 20px;
             padding: 40px; /* Adjust padding */
         }
