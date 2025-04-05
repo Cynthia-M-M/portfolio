@@ -999,6 +999,40 @@ button:disabled {
     .about-text p {
         font-size: 16px;
     }
+    /* Recent Projects Section */
+    .recent-projects {
+        display: block;
+        padding: 20px;
+    }
+
+    .recent-projects .project-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* My Services Section */
+    .my-services {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .my-services .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Interests Section */
+    .interests {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .interests .interest-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Scroll to top button */
