@@ -1049,36 +1049,36 @@ button:disabled {
 
     /* Ensure the image doesn't stretch too much */
     .interests .interest-item img {
-        max-width: 100px;                   /* Limit the image size */
-        height: auto;                       /* Maintain aspect ratio */
-        margin-right: 20px;                 /* Space between image and text */
+        max-width: 100px;                   /
+        height: auto;                       
+        margin-right: 20px;                 
     }
 
     /* Ensure that text inside each .interest-item is spaced properly */
     .interests .interest-item .text {
-        flex: 1;                             /* Allow the text to grow and take available space */
-        text-align: left;                    /* Align text to the left */
-        max-width: 80%;                      /* Limit text width */
+        flex: 1;                             /
+        text-align: left;                    
+        max-width: 80%;                      
     }
 
     /* Hover Effect on each Interest Item */
     .interests .interest-item:hover {
-        transform: translateY(-5px);         /* Lift effect on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
+        transform: translateY(-5px);         
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     }
 
     /* On larger screens (above 768px), change layout to grid */
     @media (min-width: 769px) {
         .interests {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-fit grid with flexible items */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            padding: 40px;                   /* Adjust padding on larger screens */
+            padding: 40px;                   
         }
 
         .interests .interest-item {
-            width: auto;                     /* Let grid handle widths */
-            margin: 0;                        /* Remove margin for grid items */
+            width: auto;                     
+            margin: 0;                        
         }
     }
 
@@ -1127,6 +1127,7 @@ button:disabled {
         width: 100%;
     }
 }
+
 
 
 /* Scroll to top button */
