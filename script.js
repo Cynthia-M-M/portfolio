@@ -160,22 +160,39 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     }, 2000);
 });
 
-// Scroll to Top Functionality
-const scrollToTopButton = document.getElementById('scrollToTopButton');
+ // Scroll to Top and Bottom Buttons Functionality
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+        const scrollToBottomButton = document.getElementById('scrollToBottomButton');
 
-// Show scroll-to-top button after scrolling 300px down
-window.addEventListener('scroll', function() {
-    if (window.scrollY > 300) {
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-});
+        // Show/Hide scroll buttons based on scroll position
+        window.addEventListener('scroll', function () {
+            // Scroll to Top Button behavior
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
 
-// Function to scroll to the top of the page
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
+            // Scroll to Bottom Button behavior (it shows when scrolled to the top)
+            if (window.scrollY < 300) {
+                scrollToBottomButton.style.display = 'block';
+            } else {
+                scrollToBottomButton.style.display = 'none';
+            }
+        });
+
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to scroll to the bottom of the page
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,  // Scroll to the bottom of the page
+                behavior: 'smooth'
+            });
+        }
