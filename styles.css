@@ -1163,6 +1163,31 @@ button:disabled {
 .scroll-to-top:focus {
     outline: none;
 }
+
+/* Scroll to bottom button (Positioned at top-right) */
+.scroll-to-bottom {
+    position: fixed;
+    right: 10px; /* Distance from the right margin */
+    top: 20px; /* Distance from the top of the page */
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #9e4caf; /* Purple background (similar to scroll-up button) */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-bottom:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Optional: For better accessibility */
+.scroll-to-bottom:focus {
+    outline: none;
+}
+
 /* Animations */
 @keyframes typing {
     from {
