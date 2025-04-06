@@ -43,31 +43,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const projects = [
     {
         title: 'Basic Calculator',
-        description: 'Simple Python calculator.',
+        description: 'Simple Python program that asks the user to input two numbers and a mathematical operation.',
         link: 'https://github.com/Cynthia-M-M/week-1-python-assignment.git',
         icon: '🖩' // Text-based icon for calculator
     },
     {
         title: 'Database Technologies',
-        description: 'SQL, spreadsheets, and other data storage solutions.',
+        description: 'SQL query solutions, achieved using MySQL.',
         link: 'https://github.com/PLP-Database-Design/wk-2a-Cynthia-M-M.git',
         icon: '🗃️' // Text-based icon for database
     },
     {
         title: 'Advanced Calculator',
-        description: 'Python discount calculator.',
+        description: 'A python programm that calculates the final price after applying a discount. .',
         link: 'https://github.com/Cynthia-M-M/discount-calculator.git',
         icon: '📊' // Text-based icon for percentage
     },
     {
         title: 'Hostel Management System',
-        description: 'A web-based system for managing hostel bookings, room allocation, and billing, developed using Node.js, Express, and MySQL.',
+        description: 'A web-based system for managing hostel bookings, room allocation,developed using HTML',
         link: 'https://1drv.ms/f/c/2bb2f9afc8ae1149/EsdQ3eHpsZtPiGVbJDkmYI4B5skIfjMQlYTg9_tKewU37w?e=MjMaoh',
         icon: '🏨' // Text-based icon for hostel
     },
     {
         title: 'Hotel Management System',
-        description: 'A hotel management system developed using HTML, CSS, JavaScript, and PHP, handling bookings and check-ins.',
+        description: 'A hotel management system that controls reservations and number of rooms, developed using Python.',
         link: 'https://1drv.ms/f/c/2bb2f9afc8ae1149/ErF_d7NI-c5FvQ0lq6rP14MBRLdNguXdXy_oULbf27Mzww?e=4fXuTC',
         icon: '🏨' // Text-based icon for hotel
     },
