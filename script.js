@@ -42,28 +42,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Array of Projects with Text-Based Icons (no third-party plugins)
 const projects = [
     {
-        title: 'Basic Calculator',
-        description: 'Simple Python calculator.',
-        link: 'https://github.com/Cynthia-M-M/week-1-python-assignment.git',
-        icon: '🖩' // Text-based icon for calculator
+        title: 'Safety Technology',
+        description: 'SafeSpace App.',
+        link: 'https://github.com/Cynthia-M-M/safespace-ui-kit.git',
+        icon: '🛡️' // Text-based icon for safety
     },
     {
-        title: 'Database Technologies',
-        description: 'SQL, spreadsheets, and other data storage solutions.',
-        link: 'https://github.com/PLP-Database-Design/wk-2a-Cynthia-M-M.git',
-        icon: '🗃️' // Text-based icon for database
+        title: 'Smart Career Guidance System',
+        description: 'Career Navigator',
+        link: 'https://github.com/Cynthia-M-M/Final_project.git',
+        icon: '💼' // Text-based icon for career
     },
     {
         title: 'Advanced Calculator',
         description: 'Python discount calculator.',
         link: 'https://github.com/Cynthia-M-M/discount-calculator.git',
-        icon: '📊' // Text-based icon for percentage
+        icon: '🔢' // Text-based icon for calculator
     },
     {
         title: 'Hostel Management System',
         description: 'A web-based system for managing hostel bookings, room allocation, and billing, developed using Node.js, Express, and MySQL.',
         link: 'https://1drv.ms/f/c/2bb2f9afc8ae1149/EsdQ3eHpsZtPiGVbJDkmYI4B5skIfjMQlYTg9_tKewU37w?e=MjMaoh',
-        icon: '🏨' // Text-based icon for hostel
+        icon: '🏠' // Text-based icon for hostel
     },
     {
         title: 'Hotel Management System',
@@ -179,3 +179,24 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+// Scroll to Bottom Functionality
+const scrollToBottomButton = document.getElementById('scrollToBottomButton');
+
+// Show scroll-to-bottom button after scrolling 300px up
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        scrollToBottomButton.style.display = 'block';
+    } else {
+        scrollToBottomButton.style.display = 'none';
+    }
+});
+
+// Function to scroll to the bottom of the page
+function scrollToBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+

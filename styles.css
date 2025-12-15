@@ -768,7 +768,11 @@ button:disabled {
     align-items: flex-start;
     padding-top: 80px; /* Add space for the logo */
 }
-
+.footer-socials {
+  display: flex;
+  justify-content: flex-end; /* pushes icons to the right */
+  gap: 1rem;
+}
 /* Left Section (Bio) */
 .bio {
     width: 45%;
@@ -958,6 +962,31 @@ button:disabled {
 .scroll-to-top:focus {
     outline: none;
 }
+
+/* Scroll to bottom button */
+.scroll-to-bottom {
+    position: fixed;
+    right: 10px; /* Distance from the left margin */
+    bottom: 20px; /* Distance from the bottom of the page */
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #9e4caf; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-bottom:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Optional: For better accessibility */
+.scroll-to-bottom:focus {
+    outline: none;
+}
+
 /* Animations */
 @keyframes typing {
     from {
@@ -990,4 +1019,116 @@ button:disabled {
     50% {
         transform: translateY(-10px);
     }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .interest-card,
+  .service-card {
+    width: 45%;
+  }
+
+  .projects-section .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links ul li {
+    margin: 10px 0;
+  }
+
+  /* ABOUT SECTION */
+  .details-section {
+    flex-direction: column;
+  }
+
+  /* INTERESTS */
+  .interests-grid {
+    flex-direction: column;
+  }
+
+  .interest-card {
+    width: 100%;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+
+  /* PROJECTS */
+  .projects-section .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact-section .container {
+    display: block;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .hero h1,
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero p,
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+
+  /* Stack icon + text */
+  .about-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-icon-container {
+    flex: none;
+    margin-bottom: 15px;
+  }
+
+  /* Stack education, skills, contact */
+  .details-section {
+    flex-direction: column;
+  }
+
+  .detail-item {
+    width: 100%;
+  }
+
+  /* Center skills pills nicely */
+  .skills-list {
+    justify-content: center;
+  }
 }
